@@ -1,0 +1,28 @@
+14:26:31 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+14:26:31 **** Incremental Build of configuration Debug for project LPC11xx_cmsis2_Lib ****
+make all 
+make: Nothing to be done for `all'.
+14:26:32 **** Incremental Build of configuration Debug for project D16312Lib ****
+make all 
+Building target: D16312Lib.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"/Users/yev/projects/uc/lpcxpresso/D16312Lib/LPC11xx_cmsis2_Lib/Debug" -L"/Users/yev/projects/uc/lpcxpresso/D16312Lib/CMSIS_CORE_LPC11xx/Debug" -Xlinker -Map="D16312Lib.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "D16312Lib_Debug.ld" -o "D16312Lib.axf"  ./src/D16312.o ./src/D16312Demo.o ./src/cr_cpp_config.o ./src/cr_startup_lpc11xx.o ./src/crp.o   -lLPC11xx_cmsis2_Lib -lCMSIS_CORE_LPC11xx
+Finished building target: D16312Lib.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "D16312Lib.axf"; # arm-none-eabi-objcopy -v -O binary "D16312Lib.axf" "D16312Lib.bin" ; # checksum -p LPC1114_302 -d "D16312Lib.bin";
+   text	   data	    bss	    dec	    hex	filename
+   5484	      0	     28	   5512	   1588	D16312Lib.axf
+ 
+14:26:52 **** Incremental Build of configuration Debug for project CMSIS_CORE_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+14:26:52 **** Incremental Build of configuration Debug for project LPC11xx_cmsis2_Lib ****
+make all 
+make: Nothing to be done for `all'.
+14:26:53 **** Incremental Build of configuration Debug for project D16312Lib ****
+make all 
+make: Nothing to be done for `all'.

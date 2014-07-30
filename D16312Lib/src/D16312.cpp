@@ -40,6 +40,8 @@ void D16312::EnableDispay(bool value)
 {
 	m_IsEnabled = value;
 
+	BeginCommand(0x02, true);	// Send mode settings cmd
+
 	SetBrightness(m_Brightness);
 }
 
@@ -74,9 +76,8 @@ void D16312::ClearScreen()
 		BeginCommand(i);
 		WriteData(0x00);
 		EndCommand();
-
-		memset(m_BufferVFD, 0, sizeof(m_BufferVFD));
 	}
+	memset(m_BufferVFD, 0, sizeof(m_BufferVFD));
 }
 
 void D16312::WriteChar(char chr, uint8_t pos)
