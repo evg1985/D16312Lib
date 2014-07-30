@@ -13,6 +13,19 @@ Supporting features:
 - Read keys
 
 ================================================================================
+Usage
+--------------------------------------------------------------------------------
+- Install LPCXpresso ide
+- Switch workspace to a project location and build D16312Lib
+
+The project has already consist LPC11xx_cmsis2_Lib and CMSIS_CORE_LPC11xx 
+libraries for LPC11xx microcontrollers inside the workspace. If you want to use 
+another microcontroller you have to use appropriate libraries versions
+
+D16312Demo.cpp source contain examples of use this library with lpc1114
+controller
+
+================================================================================
 The MIT License
 --------------------------------------------------------------------------------
 Copyright (c) 2014 Yevgeniy Logachev
@@ -34,16 +47,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
-================================================================================
-Usage
---------------------------------------------------------------------------------
-- Install LPCXpresso ide
-- Switch workspace to a project location and build D16312Lib
-
-The project has already consist LPC11xx_cmsis2_Lib and CMSIS_CORE_LPC11xx 
-libraries for LPC11xx microcontrollers inside the workspace. If you want to use 
-another microcontroller you have to use appropriate libraries versions
-
-D16312Demo.cpp source contain examples of use this library with lpc1114
-controller
