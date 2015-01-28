@@ -1,6 +1,7 @@
 ================================================================================
 NEC D16312 VFD controller display library for LPCXpresso board
 --------------------------------------------------------------------------------
+![](https://github.com/yevgeniy-logachev/D16312Lib/blob/master/Images/image.png)
 A small library that allow to connect LPCXpresso board with D16312 NEC VFD 
 display controller and manipulate it. In particular, it was tested with display 
 from Daewoo DV-500 DVD player
